@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="sanjit1.github.io/mutag/dist/mutag.min.js"></script>
+    <!-- TODO: Might need to remove defer later on -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Now playing area -->
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+
+        <!-- Image area -->
+        <div class="image-area">
+            <img src="src/default.jpg" alt="">
+        </div>
+
+        <!-- Song detail area -->
+        <div class="song-details">
+            <p class="title">Title</p>
+            <p class="artist">Artist</p>
+        </div>
+
+        <!-- Progress area -->
+        <div class="progress-area">
+            <div class="bar">
+                <span></span>
+            </div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="full-time">0:00</span>
+            </div>
+        </div>
+
+        <!-- Controls area -->
+        <div class="controls">
+            <i id="repeat" class="material-icons">repeat</i>
+            <i id="previous-song" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i id="play-pause" class="material-icons">play_arrow</i>
+            </div>
+            <i id="next-song" class="material-icons">skip_next</i>
+            <i id="playlist"class="material-icons">queue_music</i>
+        </div>
+
+        <!-- Music list area -->
+        <div class="music-list">
+            <div class="header">
+                <i class="material-icons">queue_music</i>
+                <span>Music List</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
