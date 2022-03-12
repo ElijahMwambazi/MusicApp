@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script src="sanjit1.github.io/mutag/dist/mutag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
     <!-- TODO: Might need to remove defer later on -->
-    <script src="./script.js" defer></script>
+    <script src="./music-list.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -53,15 +53,27 @@
                 <i id="play-pause" class="material-icons">play_arrow</i>
             </div>
             <i id="next-song" class="material-icons">skip_next</i>
-            <i id="playlist"class="material-icons">queue_music</i>
+            <i id="playlist" class="material-icons">queue_music</i>
         </div>
 
         <!-- Music list area -->
         <div class="music-list">
             <div class="header">
-                <i class="material-icons">queue_music</i>
-                <span>Music List</span>
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
             </div>
+            <ul>
+                <li>
+                    <div class="row">
+                        <span>Artist - Title</span>
+                        <p>Album</p>
+                    </div>
+                    <span class="audio-duration">0:00</span>
+                </li>
+            </ul>
         </div>
     </div>
 
